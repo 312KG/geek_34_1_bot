@@ -19,6 +19,10 @@ async def yes_answer(call: types.CallbackQuery):
 
 async def no_answer(call: types.CallbackQuery):
     print(call)
+    await bot.delete_message(
+        chat_id=call.message.chat.id,
+        message_id=call.message.message_id
+    )
     await bot.send_message(
         chat_id=call.message.chat.id,
         text="See you next time",
