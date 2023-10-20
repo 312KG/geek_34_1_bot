@@ -36,6 +36,7 @@ CREATE_USER_FORM_TABLE_QUERY = """
         )
 """
 
+
 INSERT_USER_QUERY = """
 INSERT OR IGNORE INTO telegram_users VALUES (?,?,?,?,?)
 """

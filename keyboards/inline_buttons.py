@@ -21,6 +21,7 @@ async def start_keyboard():
     return markup
 
 
+
 async def questionnaire_one_keyboard():
     markup = InlineKeyboardMarkup()
     yes_button = InlineKeyboardButton(

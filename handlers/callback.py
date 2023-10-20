@@ -10,6 +10,7 @@ async def start_questionnaire(call: types.CallbackQuery):
         reply_markup=await questionnaire_one_keyboard()
     )
 
+
 async def yes_answer(call: types.CallbackQuery):
     print(call)
     await bot.send_message(

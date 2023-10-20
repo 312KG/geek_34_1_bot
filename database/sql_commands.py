@@ -7,6 +7,7 @@ class Database:
         self.connection = sqlite3.connect("db.sqlite3")
         self.cursor = self.connection.cursor()
 
+
     def sql_create_tables(self):
         if self.connection:
             print("Database connected successfully")
