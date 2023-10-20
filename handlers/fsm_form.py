@@ -171,6 +171,7 @@ async def my_profile_call(call: types.CallbackQuery):
         )
 
 
+
 def register_fsm_form_handlers(dp: Dispatcher):
     dp.register_callback_query_handler(fsm_start,
                                        lambda call: call.data == "fsm_start")
