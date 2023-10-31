@@ -70,7 +70,16 @@ CREATE_REFERENCE_TABLE_QUERY = """
         )
 """
 
-git
+# CREATE_WALLET_TABLE_QUERY = """
+#         CREATE TABLE IF NOT EXISTS user_wallet
+#         (
+#         ID INTEGER PRIMARY KEY,
+#         OWNER_TELEGRAM_ID INTEGER,
+#         REFERRAL_TELEGRAM_ID INTEGER,
+#         UNIQUE (OWNER_TELEGRAM_ID, REFERRAL_TELEGRAM_ID)
+#         )
+# """
+
 INSERT_USER_QUERY = """
 INSERT OR IGNORE INTO telegram_users VALUES (?,?,?,?,?,?)
 """
@@ -94,6 +103,10 @@ INSERT INTO dislike_user VALUES (?,?,?)
 INSERT_REFERRAL_QUERY = """
 INSERT INTO referral VALUES (?,?,?)
 """
+
+# INSERT_USER_WALLET_QUERY = """
+# INSERT INTO user_wallet VALUES (?,?,?)
+# """
 
 SELECT_ALL_USERS_QUERY = """
 SELECT * FROM telegram_users

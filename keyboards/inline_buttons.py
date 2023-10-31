@@ -23,11 +23,16 @@ async def start_keyboard():
         "Referral Menu 💰",
         callback_data="reference_menu"
     )
+    latest_news_button = InlineKeyboardButton(
+        "5 Latest News",
+        callback_data="latest_news"
+    )
     markup.add(questionnaire_button)
     markup.add(registration_button)
     markup.add(my_profile_button)
     markup.add(random_profile_button)
     markup.add(reference_menu_button)
+    markup.add(latest_news_button)
     return markup
 
 
